@@ -1,24 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState } from 'react';
+import CustomerList from './CustomerList';
+import CustomerDetails from './CustomerDetails';
+import { Customer } from './Customer';
+import { customers } from './mockData'; // Importing mock dataset
 import './App.css';
-
 function App() {
+  const [selectedCustomerId, setSelectedCustomerId] = useState<number | null>(null);
+
+  // Find the selected customer object based on the selectedCustomerId
+  const selectedCustomer = customers.find(customer => customer.id === selectedCustomerId);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <CustomerList
+        customers={customers}
+        selectedCustomerId={selectedCustomerId}
+        onSelectCustomer={setSelectedCustomerId}
+      />
+      {/* Ensure selectedCustomer is defined before passing it to CustomerDetails */}
+      {selectedCustomer && <CustomerDetails customer={selectedCustomer} />}
     </div>
   );
 }
