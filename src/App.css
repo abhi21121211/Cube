@@ -17,7 +17,8 @@
 }
 
 .customer-card.selected {
-  background-color: lightblue;
+  background-color: 
+  #eeeeee
 }
 
 .customer-details {
@@ -26,7 +27,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  
+  background-color: 
+  #f9f9f9 
   /* justify-content: center; */
 }
 
