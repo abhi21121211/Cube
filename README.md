@@ -1,47 +1,63 @@
-# Getting Started with Create React App
+Certainly! Below is a suggested README.md file for your project:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+```markdown
+# Cube
 
-## Available Scripts
+Cube is a simple web application built using HTML, CSS, and JavaScript. It allows users to interactively explore a 3D cube by rotating it along different axes.
 
-In the project directory, you can run:
+![Cube Screenshot](https://example.com/cube-screenshot.png)
 
-### `npm start`
+## Demo
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Check out the live demo [here](https://cube-one-roan.vercel.app/).
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Features
 
-### `npm test`
+- Interactive 3D cube rotation.
+- Rotation along X, Y, and Z axes.
+- Smooth animations for a better user experience.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Usage
 
-### `npm run build`
+1. Clone the repository:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+git clone https://github.com/abhi21121211/Cube.git
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Navigate to the project directory:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+cd Cube
+```
 
-### `npm run eject`
+3. Open the `index.html` file in your web browser.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+4. Interact with the cube by clicking and dragging on the screen to rotate it along different axes.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Contributing
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Contributions are welcome! If you'd like to contribute to this project, please follow these steps:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+1. Fork the repository.
 
-## Learn More
+2. Create a new branch:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+git checkout -b feature/new-feature
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-"# Cube" 
+3. Make your changes and commit them:
+
+```
+git commit -m "Add new feature"
+```
+
+4. Push to the branch:
+
+```
+git push origin feature/new-feature
+```
+
+5. Submit a pull request.
+

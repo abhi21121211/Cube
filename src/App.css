@@ -1,6 +1,7 @@
 .app{
   display: flex;
   height: 900px;
+  /* flex-wrap: wrap; */
 }
 
 .customer-list {
